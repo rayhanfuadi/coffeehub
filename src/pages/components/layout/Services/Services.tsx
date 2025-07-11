@@ -1,0 +1,39 @@
+
+/* eslint-disable react/no-children-prop */
+import React from 'react'
+import TagLine from '../../elements/TagLine'
+import Image from 'next/image'
+import { content } from './constant'
+
+const Services = () => {
+
+    return (
+        <div className='flex flex-col gap-y-[32px]'>
+            <div className="flex flex-col h-fit items-center gap-[16px]">
+                <div className="">
+                    <TagLine children="Services" />
+                </div>
+                <div className="flex w-fit h-fit justify-center items-center gap-[16px]">
+                    <Image className='w-[250px]' src="/assets/logo.svg" alt="logo" width={250} height={48} />
+                    <p className='text-[36px] font-medium text-p900'>Journey</p>
+                </div>
+            </div>
+
+            <div className="grid grid-cols-12 gap-5">
+                {content.map((item, index) => (
+                    <div key={index} className="col-span-3 grid gap-4 place-content-start">
+                        <div className="relative h-[397px] group overflow-hidden rounded-[24px] cursor-pointer">
+                            <Image className='rounded-[24px] w-full h-full scale-105 object-cover transition-transform duration-300 group-hover:scale-100' src={item.img} alt="logo" width={1000} height={397} />
+                        </div>
+                        <div className="grid gap-y-[12px]">
+                            <h3 className='text-[24px] text-p950'>{item.tittle}</h3>
+                            <p className='text-[16px] text-p950/[0.66]'>{item.desc}</p>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </div>
+    )
+}
+
+export default Services

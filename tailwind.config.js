@@ -14,20 +14,32 @@ module.exports = {
     container: {
       center: true,
       padding: {
-        DEFAULT: '20px',
-        md: '40px',
+        DEFAULT: '16px',
+        md: '30px',
         lg: '60px',
-        xl: '80px'
+        xl: '60px'
       }
     },
     screens: {
-      sm: '576px',
-      md: '768px',
-      lg: '1440px',
-      xl: '1920px'
+      md: '540px',
+      lg: '1024px',
+      xl: '1440px'
     },
     extend: {
       colors: {
+        p50: '#FFFBEA',
+        p100: '#FFF3C5',
+        p200: '#FFE685',
+        p300: '#FFD246',
+        p400: '#FFBD1B',
+        p500: '#FE9900',
+        p600: '#E27200',
+        p700: '#BB4D02',
+        p800: '#983B08',
+        p900: '#7C310B',
+        p950: '#481700',
+
+
         primary: '#25D377',
         dark: '#000C04',
         gray: '#999D9E',
@@ -71,6 +83,17 @@ module.exports = {
         }
       },
       backgroundImage: {
+        'gr510': 'linear-gradient(to right, theme(colors.50), theme(colors.p100))',
+        'gr6080': 'linear-gradient(to left, theme(colors.p600), theme(colors.p800))',
+        'gr9570': 'linear-gradient(to right, theme(colors.p950), theme(colors.p700))',
+        'gr7095': 'linear-gradient(to left, theme(colors.p700), theme(colors.p950))',
+        'gr3010': 'linear-gradient(to right, theme(colors.p300), theme(colors.p100))',
+        'gr4020': 'linear-gradient(to left, theme(colors.p400), theme(colors.p200))',
+        'gr5030': 'linear-gradient(to left, theme(colors.p500), theme(colors.p300))',
+        'gr5030': 'linear-gradient(to left, theme(colors.p500), theme(colors.p300))',
+        'gr9060': 'linear-gradient(to right, theme(colors.p900), theme(colors.p600))',
+        'gr105': 'linear-gradient(to top, theme(colors.p100), theme(colors.p50))',
+        // 'gr95b': 'linear-gradient(to bottom, #481700, #000/0)',
         'puskur-gradient': 'linear-gradient(to top right, #0063B9, #0A0F3F)',
         'kontrib-gradient': 'linear-gradient(to top right, #9678F5, #44366E)',
         'bmk-gradient': 'linear-gradient(to top right, #0063B9, #001B33)',
