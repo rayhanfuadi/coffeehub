@@ -32,7 +32,7 @@ const About = () => {
                         <a href='http://ehanportfolio.vercel.app/' target='_blank' className='text-[14px] font-bold text-p950/[0.66]'>Rayhan fuadi</a>
                         <p className='text-[14px] text-p950/[0.66]'>Co-Founder</p>
                     </div>
-                    <Image className='w-[140px]' src="/assets/logo.svg" alt="logo" width={100} height={100} />
+                    <Image className='w-[140px]' src="/assets/Logo.svg" alt="logo" width={100} height={100} />
                 </div>
             </div>
             <div className="xl:hidden lg:block lg:col-span-1 hidden"></div>
