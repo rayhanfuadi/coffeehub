@@ -44,7 +44,7 @@ const Navbar = () => {
 
     return (
         <div className="relative container min-w-full">
-            <div className='flex justify-between items-center px-[42px] py-[28px] bg-white rounded-full mt-[16px] drop-shadow-[0_4px_14px_rgba(226,114,0,0.2)]'>
+            <div className='flex justify-between items-center xl:px-[42px] lg:px-[36px] px-[24px] xl:py-[28px] lg:py-[20px] py-[12px] bg-white rounded-full mt-[16px] drop-shadow-[0_4px_14px_rgba(226,114,0,0.2)]'>
                 <Image className='w-[140px]' src="/assets/Logo.svg" alt="logo" width={100} height={100} />
                 <div className="xl:flex hidden gap-[42px]">
                     {menu.map((item, index) => (

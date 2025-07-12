@@ -11,15 +11,15 @@ const HeroSection = () => {
     });
 
     return (
-        <div id='home' className='flex justify-center items-center mt-[140px] scroll-mt-[140px]'>
-            <div className="w-full grid xl:grid-cols-12  lg:grid-cols-8 xl:auto-rows-auto lg:auto-rows-auto grid-rows-1 gap-3 items-start">
+        <div id='home' className='flex justify-center items-center xl:mt-[140px] lg:mt-[120px] mt-[100px] scroll-mt-[140px]'>
+            <div className="w-full grid xl:grid-cols-12  lg:grid-cols-8 xl:auto-rows-auto lg:auto-rows-auto gap-3 items-start">
                 {/* Grid 3 Tablet */}
-                <div className="relative xl:hidden lg:hidden lg:col-span-4 lg:row-span-2 block bg-slate-100 rounded-[20px] w-full lg:h-full">
+                <div className="relative xl:hidden lg:hidden lg:col-span-4 lg:row-span-2 grid bg-slate-100 rounded-[20px] w-full lg:h-full">
                     <Image className='h-full object-cover rounded-[20px]' src="/assets/personHero.png" alt="logo" width={1244.44} height={700} />
                     <div className="bg-p600/[0.07] absolute bottom-0 w-full h-full "></div>
                 </div>
                 {/* Grid 1 */}
-                <div className="xl:col-span-5 xl:row-span-1 lg:col-span-5 lg:row-span-1 row-span-1 bg-gradient-to-b from-p100 to-p50 rounded-[20px] xl:h-full lg:h-full min-h-full">
+                <div className="xl:col-span-5 xl:row-span-1 lg:col-span-5 lg:row-span-1 bg-gradient-to-b from-p100 to-p50 rounded-[20px] xl:h-full lg:h-full min-h-full overflow-hidden">
                     <FallingText
                         text={`Amaricano Macchiato Cappucino Espresso V&nbsp60 Iced&nbspCoffee Flat&nbspWhite Cold&nbspBrew Affogato Bulletproof&nbspCoffee Black&nbspCoffee Latte Long&nbspBlack Japanese&nbspV&nbsp60`}
                         // highlightWords={["Amaricano", "Macchiato", "Cappucino", "Espresso", "V&nbsp60", "Iced&nbspCoffee", "Flat&nbspWhite", "Cold&nbspBrew", "Affogato", "Bulletproof&nbspCoffee", "Black&nbspCoffee", "Latte", "Long&nbspBlack", "Japanese&nbspV&nbsp60"]}
@@ -96,7 +96,7 @@ const HeroSection = () => {
                 </div>
 
                 {/* Grid 5 */}
-                <div className="xl:col-span-6 xl:row-span-1 lg:col-span-4 lg:row-span-1 lg:row-start-3 flex flex-col justify-between bg-slate-100 rounded-[20px] bg-gr9570 px-[40px] py-[32px] xl:h-full">
+                <div className="xl:col-span-6 xl:row-span-1 lg:col-span-4 lg:row-span-1 lg:row-start-3 flex flex-col justify-between bg-slate-100 rounded-[20px] bg-gr9570 px-[40px] py-[32px] xl:h-full lg:h-full h-full">
                     <div className="grid gap-y-[20px]">
                         <div className="text-[48px] text-white leading-[60px]">
                             Brew Coffee, Build Great Things Together

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable react/no-children-prop */
 import React from 'react'
 import TagLine from '../../elements/TagLine'
@@ -29,32 +30,45 @@ const Blog = () => {
     ]
 
     return (
-        <div id='blog' className="grid gap-[32px] scroll-mt-[140px]">
-            <div className="flex justify-between">
-                <div className='grid gap-y-4 place-content-start'>
+        <div id='blog' className="grid xl:gap-[32px] lg:gap-[24px] gap-[16px] scroll-mt-[140px]">
+            <div className="grid xl:grid-cols-12 lg:grid-cols-8 grid-cols-4 xl:gap-5 lg:gap-4 gap-4">
+                <div className='grid gap-y-4 xl:col-span-10 lg:col-span-5 col-span-3 place-content-start'>
                     <div className="">
                         <TagLine children="Blog" />
                     </div>
-                    <h3 className='xl:text-[52px] lg:text-[52px] text-[36px] font-medium text-p800 '>Fresh Thoughts Brewed Daily</h3>
+                    <h3 className='xl:text-[52px] lg:text-[52px] text-[28px] font-medium text-p800 '>Fresh Thoughts Brewed Daily</h3>
                 </div>
-                <div className="flex xl:gap-5 lg:gap-4 gap-3 items-end">
-                    <Image className='xl:w-[40px] lg:w-[40px] w-[30px] rounded-[24px]' src="/assets/leftArrow.svg" alt="logo" width={1000} height={100} />
-                    <Image className='xl:w-[40px] lg:w-[40px] w-[30px] rounded-[24px]' src="/assets/rightArrow.svg" alt="logo" width={1000} height={100} />
+                <div className="flex xl:col-span-2 lg:col-span-3 col-span-1 xl:gap-5 lg:gap-4 gap-2 justify-end items-end">
+                    <Image className='xl:w-[40px] lg:w-[40px] w-[28px] rounded-[24px]' src="/assets/leftArrow.svg" alt="logo" width={1000} height={100} />
+                    <Image className='xl:w-[40px] lg:w-[40px] w-[28px] rounded-[24px]' src="/assets/rightArrow.svg" alt="logo" width={1000} height={100} />
                 </div>
             </div>
 
             {/* Blog contetn 1 */}
-            <div className="grid xl:grid-cols-12 lg:grid-cols-12 grid-cols-4 gap-5">
-                {blog1.map((item, index) => (
-                    <div key={index} className="xl:col-span-3 lg:col-span-3 col-span-2">
+            <div className="grid xl:grid-cols-12 lg:grid-cols-8 grid-cols-4 xl:gap-5 lg:gap-4 gap-3">
+                {/* {blog1.map((item, index) => (
+                    <div key={index} className={`xl:col-span-3 lg:col-span-3 col-span-2 $`}>
                         <BlogCard
                             img={item.img}
                             tittle={item.tittle}
                         />
                     </div>
-                ))}
+                ))} */}
+                <div className="xl:col-span-3 lg:col-span-3 col-span-2">
+                    <BlogCard
+                        img="/assets/blog1.png"
+                        tittle='How to Stay Focused When Working from a Coffee Shop'
+                    />
+                </div>
 
-                <div className="xl:col-span-6 lg:col-span-6 col-span-4">
+                <div className="xl:col-span-3 xl:block lg:hidden col-span-2">
+                    <BlogCard
+                        img="/assets/blog2.png"
+                        tittle='The Art of Brewing: Manual Coffee Techniques for Beginners'
+                    />
+                </div>
+
+                <div className="xl:col-span-6 lg:col-span-5 col-span-4">
                     <BigBlogCard
                         img='/assets/bigblog1.png'
                         tittle='7 Signs You’ve Found the Right Place to Work Remotely'
@@ -64,8 +78,8 @@ const Blog = () => {
             </div>
 
             {/* Blog contetn 2 */}
-            <div className="grid xl:grid-cols-12 lg:grid-cols-12 grid-cols-4 gap-5">
-                <div className="xl:col-span-6 lg:col-span-6 col-span-4">
+            <div className="grid xl:grid-cols-12 lg:grid-cols-8 grid-cols-4 xl:gap-5 lg:gap-4 gap-3">
+                <div className="xl:col-span-6 lg:col-span-5 col-span-4">
                     <BigBlogCard
                         img='/assets/bigblog2.png'
                         tittle='Why Coworking Spaces Work Better Than Home Offices'
@@ -73,14 +87,27 @@ const Blog = () => {
                     />
                 </div>
 
-                {blog2.map((item, index) => (
+                {/* {blog2.map((item, index) => (
                     <div key={index} className="xl:col-span-3 lg:col-span-3 col-span-2">
                         <BlogCard
                             img={item.img}
                             tittle={item.tittle}
                         />
                     </div>
-                ))}
+                ))} */}
+                <div className="xl:col-span-3 lg:col-span-3 col-span-2">
+                    <BlogCard
+                        img="/assets/blog3.png"
+                        tittle='From Bean to Brain: How Coffee Impacts Your Productivity'
+                    />
+                </div>
+
+                <div className="xl:col-span-3 xl:block lg:hidden col-span-2">
+                    <BlogCard
+                        img="/assets/blog4.png"
+                        tittle='How to Stay Focused When Working from a Coffee Shop'
+                    />
+                </div>
             </div>
         </div>
     )
