@@ -7,10 +7,11 @@ const Portfolio = () => {
     const ScrollVelocity = dynamic(() => import("@/blocks/TextAnimations/ScrollVelocity/ScrollVelocity"), { ssr: false });
 
     return (
-        <div className='px-[16px] py-[40px] grid gap-[40px] bg-gr105 rounded-[48px]'>
+        <div id='portfolio' className='px-[16px] py-[40px] grid gap-[40px] bg-gr105 rounded-[48px] scroll-mt-[140px] items-start'>
             {/* Bento 1 */}
-            <div className="grid grid-cols-8 grid-rows-2 gap-4">
-                <div className="col-span-5 row-span-1 grid gap-4 rounded-[24px] px-4 place-content-start content-center">
+            <div className="grid xl:grid-cols-8 lg:grid-cols-5 grid-rows-2 gap-4">
+
+                <div className="xl:col-span-5 xl:row-span-1 lg:col-span-3 lg:row-span-1 grid gap-4 rounded-[24px] px-4 place-content-start content-center">
                     <div className="w-fit bg-transparent border border-p900 text-p900 px-[24px] py-[14px] rounded-full leading-none">
                         Portfolio
                     </div>
@@ -19,7 +20,8 @@ const Portfolio = () => {
                         <p className='text-[24px] text-p800 leading-[32px]'>Because great coffee isn&apos;t just a <br /> drink - it&apos;s a shared experience</p>
                     </div>
                 </div>
-                <div className="col-span-3 row-span-2 w-full h-fit bg-slate-100 rounded-[24px]">
+
+                <div className="xl:col-span-3 xl:row-span-2 lg:col-span-2 lg:row-span-1 w-full xl:h-fit lg:h-full bg-slate-100 rounded-[24px]">
                     <BentoPortfolio
                         img="/assets/portfolio2.png"
                         openIcon="/assets/show-eye.svg"
@@ -27,7 +29,8 @@ const Portfolio = () => {
                         desc="See how our space brings ideas, people, and coffee together in one inspiring flow."
                     />
                 </div>
-                <div className="col-span-5 row-span-1 w-full h-fit bg-slate-100 rounded-[24px]">
+
+                <div className="col-span-5 row-span-1 w-full h-fit bg-slate-100 h-full rounded-[24px]">
                     <BentoPortfolio
                         img="/assets/portfolio1.png"
                         openIcon="/assets/show-eye.svg"
@@ -54,7 +57,8 @@ const Portfolio = () => {
                         img="/assets/portfolio3.png"
                         openIcon="/assets/show-eye.svg"
                         closeIcon="/assets/hide-eye.svg"
-                        desc="See how our space brings ideas, people, and coffee together in one inspiring flow."
+                        desc="Work, chill, connect. Here's what Coffeehub looks like from the inside."
+                        defaultOpen={true}
                     />
                 </div>
                 <div className="col-span-3 rounded-[24px]">
@@ -62,7 +66,8 @@ const Portfolio = () => {
                         img="/assets/portfolio4.png"
                         openIcon="/assets/show-eye.svg"
                         closeIcon="/assets/hide-eye.svg"
-                        desc="See how our space brings ideas, people, and coffee together in one inspiring flow."
+                        desc="Behind the brews: moments of focus, creativity, and shared growth at Coffeehub."
+                        defaultOpen={true}
                     />
                 </div>
                 <div className="col-span-4 rounded-[24px]">
@@ -70,7 +75,8 @@ const Portfolio = () => {
                         img="/assets/portfolio5.png"
                         openIcon="/assets/show-eye.svg"
                         closeIcon="/assets/hide-eye.svg"
-                        desc="See how our space brings ideas, people, and coffee together in one inspiring flow."
+                        desc="Where great coffee meets greater minds — captured through our everyday scenes."
+                        defaultOpen={true}
                     />
                 </div>
                 <div className="col-span-3  rounded-[24px]">
@@ -78,7 +84,8 @@ const Portfolio = () => {
                         img="/assets/portfolio6.png"
                         openIcon="/assets/show-eye.svg"
                         closeIcon="/assets/hide-eye.svg"
-                        desc="See how our space brings ideas, people, and coffee together in one inspiring flow."
+                        desc="Explore moments that make Coffeehub more than just a coffee shop."
+                        defaultOpen={true}
                     />
                 </div>
                 <div className="col-span-6 rounded-[24px]">
@@ -86,7 +93,8 @@ const Portfolio = () => {
                         img="/assets/portfolio7.png"
                         openIcon="/assets/show-eye.svg"
                         closeIcon="/assets/hide-eye.svg"
-                        desc="See how our space brings ideas, people, and coffee together in one inspiring flow."
+                        desc="A glimpse into our daily grind: coffee, connection, and community in motion."
+                        defaultOpen={true}
                     />
                 </div>
             </div>

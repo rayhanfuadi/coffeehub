@@ -10,11 +10,11 @@ import Shop from "./components/layout/Shop/Shop";
 
 export default function Home() {
   return (
-    <main className="relative overflow-hidden w-full">
+    <main className="relative overflow-hidden min-w-full">
       <div className="fixed top-0 left-0 w-full z-50 ">
         <Navbar />
       </div>
-      <div className="container grid gap-y-[280px]">
+      <div className="container min-w-full grid gap-y-[280px]">
         <HeroSection />
         <About />
         <Services />
@@ -22,8 +22,8 @@ export default function Home() {
         <Portfolio />
         <Blog />
         <Contact />
-        <Footer />
       </div>
+      <Footer />
     </main>
   );
 }

@@ -11,10 +11,10 @@ const HeroSection = () => {
     });
 
     return (
-        <div id='home' className='flex justify-center items-center mt-[140px] scroll-mt-[60px]'>
-            <div className="w-full grid grid-cols-12 grid-rows-2 gap-3">
+        <div id='home' className='flex justify-center items-center mt-[140px] scroll-mt-[140px]'>
+            <div className="w-full grid xl:grid-cols-12  lg:grid-cols-8 xl:auto-rows-auto lg:auto-rows-auto gap-3 items-start">
                 {/* Grid 1 */}
-                <div className="col-span-5 row-span-1 bg-gradient-to-b from-p100 to-p50 rounded-[20px]">
+                <div className="xl:col-span-5 xl:row-span-1 lg:col-span-5 lg:row-span-1 bg-gradient-to-b from-p100 to-p50 rounded-[20px] xl:h-full">
                     <FallingText
                         text={`Amaricano Macchiato Cappucino Espresso V&nbsp60 Iced&nbspCoffee Flat&nbspWhite Cold&nbspBrew Affogato Bulletproof&nbspCoffee Black&nbspCoffee Latte Long&nbspBlack Japanese&nbspV&nbsp60`}
                         // highlightWords={["Amaricano", "Macchiato", "Cappucino", "Espresso", "V&nbsp60", "Iced&nbspCoffee", "Flat&nbspWhite", "Cold&nbspBrew", "Affogato", "Bulletproof&nbspCoffee", "Black&nbspCoffee", "Latte", "Long&nbspBlack", "Japanese&nbspV&nbsp60"]}
@@ -27,19 +27,19 @@ const HeroSection = () => {
                     />
                 </div>
                 {/* Grid 2 */}
-                <div className="col-span-3 row-span-1 bg-slate-100 rounded-[20px] justify-items-center bg-gr6080">
+                <div className="xl:col-span-3 xl:row-span-1 lg:col-span-3 lg:row-span-1 bg-slate-100 rounded-[20px] justify-items-center bg-gr6080 h-full">
                     <Image className='h-full object-cover rounded-[20px]' src="/assets/kopiHero.png" alt="logo" width={1000} height={1000} />
                 </div>
                 {/* Grid 3 */}
-                <div className="relative col-span-4 row-span-2 bg-slate-100 rounded-[20px] w-full h-[700px]">
+                <div className="relative xl:block xl:col-span-4 xl:row-span-2 lg:hidden hidden  bg-slate-100 rounded-[20px] w-full xl:h-full">
                     <Image className='h-full object-cover rounded-[20px]' src="/assets/personHero.png" alt="logo" width={1244.44} height={700} />
                     <div className="bg-p600/[0.07] absolute bottom-0 w-full h-full "></div>
                 </div>
                 {/* Grid 4 */}
-                <div className="col-span-2 row-span-1 rounded-[20px] grid justify-center items-center">
+                <div className="xl:col-span-2 xl:row-span-1 lg:col-span-4 lg:row-span-1 rounded-[20px] xl:grid lg:flex lg:p-5 justify-center items-center xl:h-full lg:h-full">
                     <span className='bg-gr9060 bg-clip-text text-transparent'>
                         <div className="leading-none">
-                            <p className='text-[52px] font-bold leading-none'>
+                            <p className='xl:text-[52px] lg:text-[36px] font-bold leading-none'>
                                 <CountUp
                                     from={0}
                                     to={10}
@@ -52,10 +52,9 @@ const HeroSection = () => {
                             Happy Costumer
                         </div>
                     </span>
-
                     <span className='bg-gr9060 bg-clip-text text-transparent'>
                         <div className="leading-none">
-                            <p className='text-[52px] font-bold leading-none'>
+                            <p className='xl:text-[52px] lg:text-[36px] font-bold leading-none'>
                                 <CountUp
                                     from={0}
                                     to={5}
@@ -70,7 +69,7 @@ const HeroSection = () => {
                     </span>
                     <span className='bg-gr9060 bg-clip-text text-transparent'>
                         <div className="leading-none">
-                            <p className='text-[52px] font-bold leading-none'>
+                            <p className='xl:text-[52px] lg:text-[36px] font-bold leading-none'>
                                 <CountUp
                                     from={0}
                                     to={20}
@@ -84,8 +83,15 @@ const HeroSection = () => {
                         </div>
                     </span>
                 </div>
+
+                {/* Grid 3 Tablet */}
+                <div className="relative xl:hidden lg:block lg:col-span-4 lg:row-span-2 hidden bg-slate-100 rounded-[20px] w-full lg:h-full">
+                    <Image className='h-full object-cover rounded-[20px]' src="/assets/personHero.png" alt="logo" width={1244.44} height={700} />
+                    <div className="bg-p600/[0.07] absolute bottom-0 w-full h-full "></div>
+                </div>
+
                 {/* Grid 5 */}
-                <div className="col-span-6 row-span-1 flex flex-col justify-between bg-slate-100 rounded-[20px] bg-gr9570 px-[40px] py-[32px]">
+                <div className="xl:col-span-6 xl:row-span-1 lg:col-span-4 lg:row-span-1 lg:row-start-3 flex flex-col justify-between bg-slate-100 rounded-[20px] bg-gr9570 px-[40px] py-[32px] xl:h-full">
                     <div className="grid gap-y-[20px]">
                         <div className="text-[48px] text-white leading-[60px]">
                             Brew Coffee, Build Great Things Together
@@ -94,7 +100,7 @@ const HeroSection = () => {
                             Tired of noisy cafés or uninspiring work corners? At Kopihub, we blend the aroma of fresh coffee with the energy of a creative, focused community.
                         </div>
                     </div>
-                    <div className="flex gap-5">
+                    <div className="xl:flex lg:grid grid gap-5">
                         <ButtonCTA variant="primary">Work With Us</ButtonCTA>
                         <ButtonCTA variant="ghost">Visit Coffehub</ButtonCTA>
                     </div>

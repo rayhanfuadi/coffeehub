@@ -15,15 +15,13 @@ module.exports = {
       center: true,
       padding: {
         DEFAULT: '16px',
-        md: '30px',
-        lg: '60px',
+        lg: '30px',
         xl: '60px'
       }
     },
     screens: {
-      md: '540px',
-      lg: '1024px',
-      xl: '1440px'
+      lg: '640px',
+      xl: '1024px'
     },
     extend: {
       colors: {

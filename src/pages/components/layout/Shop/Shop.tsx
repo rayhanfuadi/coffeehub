@@ -7,17 +7,17 @@ import Image from 'next/image'
 
 const Shop = () => {
     return (
-        <div className='flex flex-col gap-y-[32px]'>
+        <div id='shop' className='flex flex-col gap-y-[32px] scroll-mt-[140px]'>
             <div className="flex flex-col h-fit items-center gap-[16px]">
                 <div className="">
                     <TagLine children="Shop" />
                 </div>
                 <p className='text-[36px] font-medium text-p900'>Best Product</p>
             </div>
-            <div className="grid gap-[64px]">
+            <div className="grid xl:gap-[64px] lg:gap-[32px]">
                 <div className="grid grid-cols-12 gap-5">
                     {bestProduct.map((item, index) => (
-                        <div key={index} className="col-span-4">
+                        <div key={index} className="xl:col-span-4 lg:col-span-6">
                             <ProductCard
                                 img={item.img}
                                 tittle={item.tittle}
@@ -44,7 +44,7 @@ const Shop = () => {
 
                     <div className="grid grid-cols-12 gap-x-5 gap-y-[40px]">
                         {product.map((item, index) => (
-                            <div key={index} className="col-span-3">
+                            <div key={index} className="xl:col-span-3 lg:col-span-6">
                                 <ProductCard
                                     img={item.img}
                                     tittle={item.tittle}

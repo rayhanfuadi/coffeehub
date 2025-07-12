@@ -8,7 +8,7 @@ import { content } from './constant'
 const Services = () => {
 
     return (
-        <div className='flex flex-col gap-y-[32px]'>
+        <div id='services' className='flex flex-col gap-y-[32px] scroll-mt-[140px]'>
             <div className="flex flex-col h-fit items-center gap-[16px]">
                 <div className="">
                     <TagLine children="Services" />
@@ -19,9 +19,9 @@ const Services = () => {
                 </div>
             </div>
 
-            <div className="grid grid-cols-12 gap-5">
+            <div className="grid xl:grid-cols-12 lg:grid-cols-8 xl:gap-5 lg:gap-4">
                 {content.map((item, index) => (
-                    <div key={index} className="col-span-3 grid gap-4 place-content-start">
+                    <div key={index} className="xl:col-span-3 lg:col-span-4 grid gap-4 place-content-start">
                         <div className="relative h-[397px] group overflow-hidden rounded-[24px] cursor-pointer">
                             <Image className='rounded-[24px] w-full h-full scale-105 object-cover transition-transform duration-300 group-hover:scale-100' src={item.img} alt="logo" width={1000} height={397} />
                         </div>
