@@ -85,10 +85,10 @@ const Shop = () => {
                 </div>
                 <p className='text-[36px] font-medium text-p900'>Best Product</p>
             </div>
-            <div className="grid xl:gap-[64px] lg:gap-[32px]">
-                <div className="grid grid-cols-12 gap-5">
+            <div className="grid xl:gap-[64px] lg:gap-[32px] gap-[32px]">
+                <div className="grid xl:grid-cols-12 xl:gap-5 lg:grid-cols-8 lg:gap-5 gap-5">
                     {bestProduct.map((item, index) => (
-                        <div key={index} className="xl:col-span-4 lg:col-span-6">
+                        <div key={index} className="xl:col-span-4 lg:col-span-4">
                             <ProductCard
                                 img={item.img}
                                 tittle={item.tittle}
@@ -108,14 +108,14 @@ const Shop = () => {
             {/* Menu */}
             <div className="grid gap-[64px]">
                 <div className="grid gap-[24px]">
-                    <div className="flex w-fit h-fit justify-center items-center gap-[16px]">
-                        <Image className='w-[250px]' src="/assets/Logo.svg" alt="logo" width={250} height={48} />
-                        <p className='text-[36px] font-medium text-p900'>Menu</p>
+                    <div className="flex w-fit h-fit justify-center items-center xl:gap-[16px] lg:gap-[16px] gap-[8px]">
+                        <Image className='xl:w-[250px] lg:w-[250px] w-[185px]' src="/assets/Logo.svg" alt="logo" width={250} height={48} />
+                        <p className='xl:text-[36px] lg:text-[36px] text-[28px] font-medium text-p900'>Menu</p>
                     </div>
 
-                    <div className="grid grid-cols-12 gap-x-5 gap-y-[40px]">
+                    <div className="grid xl:grid-cols-12 xl:gap-x-5 xl:gap-y-[40px] lg:grid-cols-12 lg:gap-x-5 lg:gap-y-[40px] grid-cols-4 gap-4">
                         {product.map((item, index) => (
-                            <div key={index} className="xl:col-span-3 lg:col-span-6">
+                            <div key={index} className="xl:col-span-3 lg:col-span-6 col-span-2">
                                 <ProductCard
                                     img={item.img}
                                     tittle={item.tittle}

@@ -13,6 +13,11 @@ const HeroSection = () => {
     return (
         <div id='home' className='flex justify-center items-center mt-[140px] scroll-mt-[140px]'>
             <div className="w-full grid xl:grid-cols-12  lg:grid-cols-8 xl:auto-rows-auto lg:auto-rows-auto gap-3 items-start">
+                {/* Grid 3 Tablet */}
+                <div className="relative xl:hidden lg:hidden lg:col-span-4 lg:row-span-2 block bg-slate-100 rounded-[20px] w-full lg:h-full">
+                    <Image className='h-full object-cover rounded-[20px]' src="/assets/personHero.png" alt="logo" width={1244.44} height={700} />
+                    <div className="bg-p600/[0.07] absolute bottom-0 w-full h-full "></div>
+                </div>
                 {/* Grid 1 */}
                 <div className="xl:col-span-5 xl:row-span-1 lg:col-span-5 lg:row-span-1 bg-gradient-to-b from-p100 to-p50 rounded-[20px] xl:h-full lg:h-full">
                     <FallingText
@@ -36,10 +41,10 @@ const HeroSection = () => {
                     <div className="bg-p600/[0.07] absolute bottom-0 w-full h-full "></div>
                 </div>
                 {/* Grid 4 */}
-                <div className="xl:col-span-2 xl:row-span-1 lg:col-span-4 lg:row-span-1 rounded-[20px] xl:grid lg:flex lg:p-5 justify-center items-center xl:h-full lg:h-full">
+                <div className="xl:col-span-2 xl:row-span-1 lg:col-span-4 lg:row-span-1 flex rounded-[20px] xl:grid lg:flex lg:p-5 p-4 justify-center items-center xl:h-full lg:h-full h-full">
                     <span className='bg-gr9060 bg-clip-text text-transparent'>
                         <div className="leading-none">
-                            <p className='xl:text-[52px] lg:text-[36px] font-bold leading-none'>
+                            <p className='xl:text-[52px] lg:text-[36px] text-[36px] font-bold leading-none'>
                                 <CountUp
                                     from={0}
                                     to={10}
@@ -54,7 +59,7 @@ const HeroSection = () => {
                     </span>
                     <span className='bg-gr9060 bg-clip-text text-transparent'>
                         <div className="leading-none">
-                            <p className='xl:text-[52px] lg:text-[36px] font-bold leading-none'>
+                            <p className='xl:text-[52px] lg:text-[36px] text-[36px] font-bold leading-none'>
                                 <CountUp
                                     from={0}
                                     to={5}
@@ -69,7 +74,7 @@ const HeroSection = () => {
                     </span>
                     <span className='bg-gr9060 bg-clip-text text-transparent'>
                         <div className="leading-none">
-                            <p className='xl:text-[52px] lg:text-[36px] font-bold leading-none'>
+                            <p className='xl:text-[52px] lg:text-[36px] text-[36px] font-bold leading-none'>
                                 <CountUp
                                     from={0}
                                     to={20}

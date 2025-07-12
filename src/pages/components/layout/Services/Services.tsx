@@ -39,13 +39,13 @@ const Services = () => {
                 </div>
             </div>
 
-            <div className="grid xl:grid-cols-12 lg:grid-cols-8 xl:gap-5 lg:gap-4">
+            <div className="grid xl:grid-cols-12 lg:grid-cols-8 grid-cols-4 xl:gap-5 lg:gap-4 gap-x-4 gap-y-[30px]">
                 {content.map((item, index) => (
-                    <div key={index} className="xl:col-span-3 lg:col-span-4 grid gap-4 place-content-start">
-                        <div className="relative h-[397px] group overflow-hidden rounded-[24px] cursor-pointer">
+                    <div key={index} className="xl:col-span-3 lg:col-span-4 col-span-2 grid gap-4 place-content-start">
+                        <div className="relative  group overflow-hidden rounded-[24px] cursor-pointer">
                             <Image className='rounded-[24px] w-full h-full scale-105 object-cover transition-transform duration-300 group-hover:scale-100' src={item.img} alt="logo" width={1000} height={397} />
                         </div>
-                        <div className="grid gap-y-[12px]">
+                        <div className="grid gap-y-[12px] px-2">
                             <h3 className='text-[24px] text-p950'>{item.tittle}</h3>
                             <p className='text-[16px] text-p950/[0.66]'>{item.desc}</p>
                         </div>

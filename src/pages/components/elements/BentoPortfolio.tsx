@@ -23,7 +23,7 @@ const BentoPortfolio = (props: BentoPortfolioProps) => {
             )}
 
             {isOpen && (
-                <div className="w-full h-full p-5 text-[20px] text-white absolute top-0 left-0 z-10 bg-gradient-to-b from-p950 to-#000000/0">
+                <div className="w-full h-full p-5 xl:text-[20px] lg:xl:text-[20px] text-[12px] text-white absolute top-0 left-0 z-10 bg-gradient-to-b from-p950 to-#000000/0">
                     {desc}
                     <button type="button" onClick={() => setIsOpen(false)} className="absolute bottom-6 right-6">
                         <Image className='transition ease-in duration-300 cursor-pointer' src={closeIcon} alt="logo" width={40} height={40} />

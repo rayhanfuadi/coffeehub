@@ -9,9 +9,9 @@ const Portfolio = () => {
     return (
         <div id='portfolio' className='px-[16px] py-[40px] grid gap-[40px] bg-gr105 rounded-[48px] scroll-mt-[140px] items-start'>
             {/* Bento 1 */}
-            <div className="grid xl:grid-cols-8 lg:grid-cols-5 grid-rows-2 gap-4">
+            <div className="grid xl:grid-cols-8 lg:grid-cols-5 grid-cols-4 xl:grid-rows-2 lg:grid-rows-2 gap-4">
 
-                <div className="xl:col-span-5 xl:row-span-1 lg:col-span-3 lg:row-span-1 grid gap-4 rounded-[24px] px-4 place-content-start content-center">
+                <div className="xl:col-span-5 xl:row-span-1 lg:col-span-3 lg:row-span-1 col-span-4 row-start-1 grid gap-4 rounded-[24px] px-4 place-content-start content-center">
                     <div className="w-fit bg-transparent border border-p900 text-p900 px-[24px] py-[14px] rounded-full leading-none">
                         Portfolio
                     </div>
@@ -21,7 +21,7 @@ const Portfolio = () => {
                     </div>
                 </div>
 
-                <div className="xl:col-span-3 xl:row-span-2 lg:col-span-2 lg:row-span-1 w-full xl:h-fit lg:h-full bg-slate-100 rounded-[24px]">
+                <div className="xl:col-span-3 xl:row-span-2 lg:col-span-2 lg:row-span-1 grid col-span-4 w-full xl:h-fit lg:h-full bg-slate-100 rounded-[24px]">
                     <BentoPortfolio
                         img="/assets/portfolio2.png"
                         openIcon="/assets/show-eye.svg"
@@ -30,7 +30,7 @@ const Portfolio = () => {
                     />
                 </div>
 
-                <div className="col-span-5 row-span-1 w-full bg-slate-100 h-full rounded-[24px]">
+                <div className="xl:col-span-5 lg:col-span-5 col-span-4 row-span-1 w-full bg-slate-100 h-full rounded-[24px]">
                     <BentoPortfolio
                         img="/assets/portfolio1.png"
                         openIcon="/assets/show-eye.svg"
@@ -51,8 +51,8 @@ const Portfolio = () => {
             </div>
 
             {/* Bento 2 */}
-            <div className="grid grid-cols-9 h-fit gap-4">
-                <div className="col-span-2 rounded-[24px]">
+            <div className="grid xl:grid-cols-9 lg:grid-cols-9 grid-cols-4 h-fit gap-4">
+                <div className="xl:col-span-2 lg:col-span-2 col-span-2 rounded-[24px]">
                     <BentoPortfolio
                         img="/assets/portfolio3.png"
                         openIcon="/assets/show-eye.svg"
@@ -61,7 +61,7 @@ const Portfolio = () => {
                         defaultOpen={true}
                     />
                 </div>
-                <div className="col-span-3 rounded-[24px]">
+                <div className="xl:col-span-3 lg:col-span-3 col-span-2 rounded-[24px]">
                     <BentoPortfolio
                         img="/assets/portfolio4.png"
                         openIcon="/assets/show-eye.svg"
@@ -70,7 +70,7 @@ const Portfolio = () => {
                         defaultOpen={true}
                     />
                 </div>
-                <div className="col-span-4 rounded-[24px]">
+                <div className="xl:col-span-4 lg:col-span-4 col-span-2 rounded-[24px]">
                     <BentoPortfolio
                         img="/assets/portfolio5.png"
                         openIcon="/assets/show-eye.svg"
@@ -79,7 +79,7 @@ const Portfolio = () => {
                         defaultOpen={true}
                     />
                 </div>
-                <div className="col-span-3  rounded-[24px]">
+                <div className="xl:col-span-3 lg:col-span-3 col-span-2 rounded-[24px]">
                     <BentoPortfolio
                         img="/assets/portfolio6.png"
                         openIcon="/assets/show-eye.svg"
@@ -88,7 +88,7 @@ const Portfolio = () => {
                         defaultOpen={true}
                     />
                 </div>
-                <div className="col-span-6 rounded-[24px]">
+                <div className="xl:col-span-6 lg:col-span-6 col-span-4 rounded-[24px]">
                     <BentoPortfolio
                         img="/assets/portfolio7.png"
                         openIcon="/assets/show-eye.svg"

@@ -35,18 +35,18 @@ const Blog = () => {
                     <div className="">
                         <TagLine children="Blog" />
                     </div>
-                    <h3 className='text-[52px] font-medium text-p800 '>Fresh Thoughts Brewed Daily</h3>
+                    <h3 className='xl:text-[52px] lg:text-[52px] text-[36px] font-medium text-p800 '>Fresh Thoughts Brewed Daily</h3>
                 </div>
-                <div className="flex gap-5 items-end">
-                    <Image className='w-[40px] rounded-[24px]' src="/assets/leftArrow.svg" alt="logo" width={1000} height={100} />
-                    <Image className='w-[40px] rounded-[24px]' src="/assets/rightArrow.svg" alt="logo" width={1000} height={100} />
+                <div className="flex xl:gap-5 lg:gap-4 gap-3 items-end">
+                    <Image className='xl:w-[40px] lg:w-[40px] w-[30px] rounded-[24px]' src="/assets/leftArrow.svg" alt="logo" width={1000} height={100} />
+                    <Image className='xl:w-[40px] lg:w-[40px] w-[30px] rounded-[24px]' src="/assets/rightArrow.svg" alt="logo" width={1000} height={100} />
                 </div>
             </div>
 
             {/* Blog contetn 1 */}
-            <div className="grid grid-cols-12 gap-5">
+            <div className="grid xl:grid-cols-12 lg:grid-cols-12 grid-cols-4 gap-5">
                 {blog1.map((item, index) => (
-                    <div key={index} className="col-span-3">
+                    <div key={index} className="xl:col-span-3 lg:col-span-3 col-span-2">
                         <BlogCard
                             img={item.img}
                             tittle={item.tittle}
@@ -54,7 +54,7 @@ const Blog = () => {
                     </div>
                 ))}
 
-                <div className="col-span-6">
+                <div className="xl:col-span-6 lg:col-span-6 col-span-4">
                     <BigBlogCard
                         img='/assets/bigblog1.png'
                         tittle='7 Signs You’ve Found the Right Place to Work Remotely'
@@ -64,8 +64,8 @@ const Blog = () => {
             </div>
 
             {/* Blog contetn 2 */}
-            <div className="grid grid-cols-12 gap-5">
-                <div className="col-span-6">
+            <div className="grid xl:grid-cols-12 lg:grid-cols-12 grid-cols-4 gap-5">
+                <div className="xl:col-span-6 lg:col-span-6 col-span-4">
                     <BigBlogCard
                         img='/assets/bigblog2.png'
                         tittle='Why Coworking Spaces Work Better Than Home Offices'
@@ -74,7 +74,7 @@ const Blog = () => {
                 </div>
 
                 {blog2.map((item, index) => (
-                    <div key={index} className="col-span-3">
+                    <div key={index} className="xl:col-span-3 lg:col-span-3 col-span-2">
                         <BlogCard
                             img={item.img}
                             tittle={item.tittle}

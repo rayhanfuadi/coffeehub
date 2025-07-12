@@ -19,8 +19,8 @@ const ProductCard = (props: ProductCardProps) => {
 
             <div className="flex justify-between">
                 <div className="grid gap-2 px-2 pb-[16px]">
-                    <h3 className='text-[20px] font-semibold text-p950'>{tittle}</h3>
-                    <p className='text-[12px] text-p950/[0.66]'>{desc}</p>
+                    <h3 className='xl:text-[20px] lg:text-[20px] text-[12px] font-semibold text-p950'>{tittle}</h3>
+                    <p className='xl:text-[12px] lg:text-[12px] text-[10px] text-p950/[0.66]'>{desc}</p>
                 </div>
                 {/* price */}
                 <div className="px-[12px] py-[8px] h-fit leading-none font-bold text-white bg-p800 rounded-[24px]">
