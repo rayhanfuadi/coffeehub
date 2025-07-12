@@ -10,7 +10,7 @@ interface BlogCardProps {
 const BigBlogCard = (props: BlogCardProps) => {
     const { img, tittle, desc } = props
     return (
-        <div className='relative group h-full overflow-hidden rounded-[24px] cursor-pointer hover:border  hover:border-[2px] hover:border-p600'>
+        <div className='relative group h-full overflow-hidden rounded-[24px] cursor-pointer hover:border-[2px] hover:border-p600'>
             <Image className='w-full' src={img} alt="logo" width={1000} height={1000} />
             <div className="grid gap-1 px-4 pt-4 pb-5 w-full h-fit p-5 text-white absolute bottom-0 left-0 z-10 bg-gradient-to-t from-black to-#000000/0 ">
                 <span className='text-[12px] font-semibold text-white/[0.76]'>10-07-2025</span>

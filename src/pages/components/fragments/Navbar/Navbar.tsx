@@ -2,7 +2,6 @@
 import Image from 'next/image'
 import React from 'react'
 import ItemMenu from '../../elements/ItemMenu'
-import { menu } from './constant';
 
 const Navbar = () => {
     const handleScroll = (sectionId: string) => {
@@ -11,6 +10,37 @@ const Navbar = () => {
             section.scrollIntoView({ behavior: "smooth", block: "start" });
         }
     };
+
+    const menu = [
+        {
+            tittle: "Home",
+            href: "home",
+        },
+        {
+            tittle: "About",
+            href: "about",
+        },
+        {
+            tittle: "Services",
+            href: "services",
+        },
+        {
+            tittle: "Shop",
+            href: "shop",
+        },
+        {
+            tittle: "Portolio",
+            href: "portfolio",
+        },
+        {
+            tittle: "Blog",
+            href: "blog",
+        },
+        {
+            tittle: "Contact",
+            href: "contact",
+        },
+    ]
 
     return (
         <div className="relative container min-w-full">

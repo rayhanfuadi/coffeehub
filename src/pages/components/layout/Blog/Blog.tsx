@@ -3,11 +3,30 @@ import React from 'react'
 import TagLine from '../../elements/TagLine'
 import Image from 'next/image'
 import BlogCard from '../../fragments/BlogCard/BlogCard'
-import { blog1, blog2 } from './constant'
 import BigBlogCard from '../../fragments/BlogCard/BigBlogCard'
 
 const Blog = () => {
+    const blog1 = [
+        {
+            img: '/assets/blog1.png',
+            tittle: 'How to Stay Focused When Working from a Coffee Shop'
+        },
+        {
+            img: '/assets/blog2.png',
+            tittle: 'The Art of Brewing: Manual Coffee Techniques for Beginners'
+        },
+    ]
 
+    const blog2 = [
+        {
+            img: '/assets/blog3.png',
+            tittle: 'From Bean to Brain: How Coffee Impacts Your Productivity'
+        },
+        {
+            img: '/assets/blog4.png',
+            tittle: 'How to Stay Focused When Working from a Coffee Shop'
+        },
+    ]
 
     return (
         <div id='blog' className="grid gap-[32px] scroll-mt-[140px]">

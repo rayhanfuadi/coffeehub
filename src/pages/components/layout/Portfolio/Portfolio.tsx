@@ -30,7 +30,7 @@ const Portfolio = () => {
                     />
                 </div>
 
-                <div className="col-span-5 row-span-1 w-full h-fit bg-slate-100 h-full rounded-[24px]">
+                <div className="col-span-5 row-span-1 w-full bg-slate-100 h-full rounded-[24px]">
                     <BentoPortfolio
                         img="/assets/portfolio1.png"
                         openIcon="/assets/show-eye.svg"
