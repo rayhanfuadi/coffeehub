@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <div className='xl:flex lg:grid gap-[60px] justify-between xl:px-[60px] xl:py-[100px] lg:px-[30px] lg:py-[60px] bg-p50'>
             <div className="grid lg:grid-cols-8 xl:gap-[32px] lg:gap-[24px]">
-                <Image className='lg:col-span-8 w-fit' src="/assets/logo.svg" alt="logo" width={1000} height={100} />
+                <Image className='lg:col-span-8 w-fit' src="/assets/Logo.svg" alt="logo" width={1000} height={100} />
                 <p className='lg:col-span-6 xl:text-[14px] lg:text-[12px] text-p900'>Whether you’re planning to book a spot, ask something about our services, explore a potential collaboration, or simply want to say hi — we’d love to hear from you. Drop us a message through the form below, and our team will get back to you as soon as possible. </p>
                 <Image className='w-fit lg:col-span-8' src="/assets/social.svg" alt="logo" width={1000} height={100} />
             </div>

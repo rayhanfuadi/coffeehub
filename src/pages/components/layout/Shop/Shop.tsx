@@ -109,7 +109,7 @@ const Shop = () => {
             <div className="grid gap-[64px]">
                 <div className="grid gap-[24px]">
                     <div className="flex w-fit h-fit justify-center items-center gap-[16px]">
-                        <Image className='w-[250px]' src="/assets/logo.svg" alt="logo" width={250} height={48} />
+                        <Image className='w-[250px]' src="/assets/Logo.svg" alt="logo" width={250} height={48} />
                         <p className='text-[36px] font-medium text-p900'>Menu</p>
                     </div>
 
