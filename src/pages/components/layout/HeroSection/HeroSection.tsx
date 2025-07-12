@@ -19,7 +19,7 @@ const HeroSection = () => {
                     <div className="bg-p600/[0.07] absolute bottom-0 w-full h-full "></div>
                 </div>
                 {/* Grid 1 */}
-                <div className="xl:col-span-5 xl:row-span-1 lg:col-span-5 lg:row-span-1 bg-gradient-to-b from-p100 to-p50 rounded-[20px] xl:h-full lg:h-full">
+                <div className="xl:col-span-5 xl:row-span-1 lg:col-span-5 lg:row-span-1 bg-gradient-to-b from-p100 to-p50 rounded-[20px] xl:h-full lg:h-full h-full">
                     <FallingText
                         text={`Amaricano Macchiato Cappucino Espresso V&nbsp60 Iced&nbspCoffee Flat&nbspWhite Cold&nbspBrew Affogato Bulletproof&nbspCoffee Black&nbspCoffee Latte Long&nbspBlack Japanese&nbspV&nbsp60`}
                         // highlightWords={["Amaricano", "Macchiato", "Cappucino", "Espresso", "V&nbsp60", "Iced&nbspCoffee", "Flat&nbspWhite", "Cold&nbspBrew", "Affogato", "Bulletproof&nbspCoffee", "Black&nbspCoffee", "Latte", "Long&nbspBlack", "Japanese&nbspV&nbsp60"]}
