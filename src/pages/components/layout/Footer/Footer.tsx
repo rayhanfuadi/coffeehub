@@ -27,7 +27,7 @@ const Footer = () => {
                         <p className='hover:underline hover:underline-offset-4'>Contact</p>
                     </div>
                 </div>
-                <span>© 2025 Muhammad Rayhan Fuadi. All Right Reserved</span>
+                <span className='text-[14px] text-p800'>© 2025 Muhammad Rayhan Fuadi. All Right Reserved</span>
             </div>
         </div>
     )
