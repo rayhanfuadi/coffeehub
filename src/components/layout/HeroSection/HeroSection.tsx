@@ -1,9 +1,9 @@
 
 import Image from 'next/image'
 import React from 'react'
-import ButtonCTA from '../../elements/ButtonCTA'
-import FallingText from '@/blocks/TextAnimations/FallingText/FallingText'
 import dynamic from 'next/dynamic'
+import FallingText from '@/blocks/TextAnimations/FallingText/FallingText';
+import ButtonCTA from '@/components/elements/ButtonCTA';
 
 const HeroSection = () => {
     const CountUp = dynamic(() => import("@/blocks/TextAnimations/CountUp/CountUp"), {

@@ -1,8 +1,8 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
-import AppShell from "./components/layout/AppShell/AppShell";
 import { Sora } from "next/font/google";
 import "../styles/globals.css";
+import AppShell from "@/components/layout/AppShell/AppShell";
 
 const sora = Sora({
   subsets: ["latin"],

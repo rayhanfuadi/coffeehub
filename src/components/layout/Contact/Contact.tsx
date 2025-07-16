@@ -6,7 +6,7 @@ import ButtonSubmit from '../../elements/ButtonSubmit'
 
 const Contact = () => {
     return (
-        <div id='contact' className='grid gap-[32px] mb-[280px] scroll-mt-[140px]'>
+        <div id='contact' className='grid gap-[32px] mb-[280px] xl:scroll-mt-[140px] lg:scroll-mt-[120px] scroll-mt-[90px]'>
             <div className="">
                 <TagLine children="Contact" />
             </div>

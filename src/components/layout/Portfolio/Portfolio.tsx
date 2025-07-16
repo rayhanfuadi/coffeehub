@@ -7,7 +7,7 @@ const Portfolio = () => {
     const ScrollVelocity = dynamic(() => import("@/blocks/TextAnimations/ScrollVelocity/ScrollVelocity"), { ssr: false });
 
     return (
-        <div id='portfolio' className='px-[16px] py-[40px] grid gap-[40px] bg-gr105 rounded-[48px] scroll-mt-[140px] items-start'>
+        <div id='portfolio' className='px-[16px] py-[40px] grid gap-[40px] bg-gr105 rounded-[48px] items-start xl:scroll-mt-[140px] lg:scroll-mt-[120px] scroll-mt-[90px]'>
             {/* Bento 1 */}
             <div className="grid xl:grid-cols-8 lg:grid-cols-5 grid-cols-4 xl:grid-rows-2 lg:grid-rows-2 gap-4">
 

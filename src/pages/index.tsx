@@ -1,12 +1,13 @@
-import Navbar from "./components/fragments/Navbar/Navbar";
-import About from "./components/layout/About/About";
-import Blog from "./components/layout/Blog/Blog";
-import Contact from "./components/layout/Contact/Contact";
-import Footer from "./components/layout/Footer/Footer";
-import HeroSection from "./components/layout/HeroSection/HeroSection";
-import Portfolio from "./components/layout/Portfolio/Portfolio";
-import Services from "./components/layout/Services/Services";
-import Shop from "./components/layout/Shop/Shop";
+import Navbar from "@/components/fragments/Navbar/Navbar";
+import About from "@/components/layout/About/About";
+import Blog from "@/components/layout/Blog/Blog";
+import Contact from "@/components/layout/Contact/Contact";
+import Footer from "@/components/layout/Footer/Footer";
+import HeroSection from "@/components/layout/HeroSection/HeroSection";
+import Portfolio from "@/components/layout/Portfolio/Portfolio";
+import Services from "@/components/layout/Services/Services";
+import Shop from "@/components/layout/Shop/Shop";
+
 
 export default function Home() {
   return (

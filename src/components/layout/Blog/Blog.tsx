@@ -30,7 +30,7 @@ const Blog = () => {
     ]
 
     return (
-        <div id='blog' className="grid xl:gap-[32px] lg:gap-[24px] gap-[16px] scroll-mt-[140px]">
+        <div id='blog' className="grid xl:gap-[32px] lg:gap-[24px] gap-[16px] xl:scroll-mt-[140px] lg:scroll-mt-[120px] scroll-mt-[90px]">
             <div className="grid xl:grid-cols-12 lg:grid-cols-8 grid-cols-4 xl:gap-5 lg:gap-4 gap-4">
                 <div className='grid gap-y-4 xl:col-span-10 lg:col-span-5 col-span-3 place-content-start'>
                     <div className="">

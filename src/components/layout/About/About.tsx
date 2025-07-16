@@ -6,7 +6,7 @@ import TagLine from '../../elements/TagLine'
 
 const About = () => {
     return (
-        <div id='about' className='grid xl:grid-cols-12 lg:grid-cols-8 xl:gap-4 lg:gap-[40px] gap-[40px] justify-center content-center h-screen scroll-mt-[60px]'>
+        <div id='about' className='grid xl:grid-cols-12 lg:grid-cols-8 xl:gap-4 lg:gap-[40px] gap-[40px] justify-center content-center h-screen xl:scroll-mt-[60px] lg:scroll-mt-[220px] scroll-mt-[150px]'>
             <div className="xl:hidden lg:block lg:col-span-1 hidden"></div>
             <div className="xl:col-span-6 grid lg:col-span-6 gap-4 place-content-center items-center">
                 <Image className='xl:w-[538px] lg:min-w-full rounded-[24px]' src="/assets/fotoAbout.png" alt="logo" width={1000} height={1000} />
